@@ -16,7 +16,6 @@ public class Tarefas {
     private Long id;
     private String nome;
     private double custo;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private LocalDate dataLimite;
     private int ordemApresentacao;
 
