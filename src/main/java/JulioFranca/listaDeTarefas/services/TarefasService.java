@@ -28,9 +28,7 @@ public class TarefasService {
     }
 
     public List<Tarefas> list(){
-        Sort sort = Sort.by(Direction.DESC, "ordemApresentacao")
-                .and(Sort.by(Direction.ASC, "id"));
-        return tarefasRepository.findAll(sort);
+        return tarefasRepository.findAll();
     }
 
     public List<Tarefas> update(Long id, Tarefas tarefas) {
